@@ -1,0 +1,25 @@
+{
+    "shared": {
+        "locale": "en"
+    },
+
+    "server": {
+        "acePermission": "doors_creator",
+        "saveDoorStateAfterRestart": true,
+        "lockpickName": "lockpick",
+        "lockpickMinimumQuantity": 1,
+        "lockpickLoseOnUse": true
+    },
+
+    "client": {
+        "doorLockAnimation": {
+            "dict": "anim@heists@keycard@",
+            "name": "enter",
+            "duration": 1000,
+            "isEnabled": true
+        },
+        
+        "doorLockIconSize": 1.0,
+        "use3dTextInsteadOfIcon": false
+    }
+}

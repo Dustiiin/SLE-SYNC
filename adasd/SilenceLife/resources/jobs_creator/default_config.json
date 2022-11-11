@@ -1,0 +1,64 @@
+{
+    "client": {
+        "useJSFourIdCard": false,
+        "textFont": 0,
+        "enableAlarmWhenLockpicking": true,
+        "textSize": 1,
+        "carLockpickTime": 10,
+        "use3Dtext": false,
+        "licenses": {
+            "driver": {
+                "drive_truck": true,
+                "drive_bike": true,
+                "drive": true,
+                "dmv": true,
+                "driver": true
+            },
+            "weapon": {
+                "weapon": true
+            }
+        },
+        "canUseActionsMenuWhileOffDuty": false,
+        "markerDistance": 10,
+        "marketSellOnePerTime": false,
+        "useBillingUI": false,
+        "menuPosition": "bottom-right",
+        "actionsMenuKey": "f6",
+        "freezeWhenHandcuffed": false
+    },
+    "server": {
+        "areDiscordLogsActive": false,
+        "specificWebhooks": [],
+        "acePermission": "jobcreator",
+        "mainDiscordWebhook": "",
+        "unemployedGrade": 0,
+        "unemployedJob": "unemployed",
+        "handcuffRequireItem": false,
+        "handcuffsItemName": "handcuffs",
+        "lockpickCarRequireItem": false,
+        "lockpickItemName": "lockpick",
+        "lockpickRemoveOnUse": false,
+        "robbableAccounts": ["money", "black_money"],
+        "canAlwaysCarryItem": false,
+        "depositableInSafeAccounts": ["money", "black_money"],
+        "enableCashInSafesOldESX": true,
+        "repairVehicleRequireItem": false,
+        "repairVehicleItemName": "fixkit",
+        "repairVehicleRemoveOnUse": false,
+        "cleanVehicleRequireItem": false,
+        "cleanVehicleItemName": "sponge",
+        "cleanVehicleRemoveOnUse": false,
+        "healRequireItem": false,
+        "healItemName": "bandage",
+        "healRemoveOnuse": false,
+        "reviveRequireItem": false,
+        "reviveItemName": "medikit",
+        "reviveRemoveOnuse": false,
+        "enablePropertyOutfits": true,
+        "parkAllOwnedVehiclesOnRestart": false
+    },
+    "shared": {
+        "locale": "en",
+        "allowAfkFarming": false
+    }
+}

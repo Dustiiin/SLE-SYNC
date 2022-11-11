@@ -1,0 +1,18 @@
+Locales ['sv'] = {
+	['used_kit']					= 'du använde ~y~x1 ~b~Reparationskit',
+	['must_be_outside']				= 'du måste vara utanför fordonet!',
+	['no_vehicle_nearby']			= 'det finns inget ~r~fordon ~w~i närheten',
+	['finished_repair']				= '~g~du reparerade fordonet!',
+	['finished_tyre_repair']		= '~r~Översättning saknas',
+	['abort_hint']					= 'tryck ~INPUT_VEH_DUCK~ för att avbryta',
+	['aborted_repair']				= 'du ~r~avbröt ~w~reparationen',
+	['aborted_tyre_repair']			= '~r~Översättning saknas',
+	['car_destroy']					= '~r~Översättning saknas',
+	['car_dead']					= 'You can\'t repair those damage ...',
+	['not_near_tyre']				= '~r~Översättning saknas',
+	['not_near_engine']				= '~r~Översättning saknas',
+	['MechIsOnline']				= '~r~Översättning saknas',
+	['ReparingEngine']				= 'Översättning saknas',
+	['ReparingTyre']				= 'Översättning saknas',
+	['Cancelling']					= 'Översättning saknas',
+}

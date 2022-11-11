@@ -1,0 +1,26 @@
+{
+  "VoiceEnabled": true,
+  "ServerUniqueIdentifier": "OLiN4cgBg0kB67lhok+IjQDvvTs=",
+  "MinimumPluginVersion": "2.3.6",
+  "SoundPack": "default",
+  "IngameChannelId": 587023,
+  "IngameChannelPassword": "Gurke",
+  "SwissChannelIds": [ 66 ],
+  "VoiceRanges": [ 3.5, 8, 15, 32 ],
+  "EnableVoiceRangeNotification": true,
+  "VoiceRangeNotification": "Deine neue Sprachreichweite ist {voicerange} Meter.",
+  "RadioType": 4,
+  "EnableRadioHardcoreMode": true,
+  "UltraShortRangeDistance": 1800.0,
+  "ShortRangeDistance": 3000.0,
+  "LongRangeDistace": 8000.0,
+  "MegaphoneRange": 120.0,
+  "NamePattern": "[{serverid}] SilenceLife Client",
+  "RequestTalkStates": true,
+  "RequestRadioTrafficStates": true,
+
+  "ToggleRange": "Z",
+  "TalkPrimary": "N",
+  "TalkSecondary": "CAPITAL",
+  "TalkMegaphone": "B"
+}

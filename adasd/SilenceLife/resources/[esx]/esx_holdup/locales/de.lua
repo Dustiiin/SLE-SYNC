@@ -1,0 +1,16 @@
+Locales['de'] = {
+  ['shop_robbery'] = 'Ladenraub',
+  ['press_to_rob'] = 'Drücke ~INPUT_CONTEXT~ ~o~zum ausrauben~s~ ~b~%s~s~',
+  ['robbery_timer'] = 'Ladenraub: ~r~%s~s~ sekunden übrig!',
+  ['recently_robbed'] = 'Dieser Laden wurde bereits ausgeraubt. Bitte warte ~y~%s~s~ sekunden!',
+  ['rob_in_prog'] = '~r~Raub im gange bei: ~b~%s~s~',
+  ['started_to_rob'] = 'Du hast einen Raub gestartet ~y~%s~s~',
+  ['alarm_triggered'] = 'Der Alarm wurde ausgelöst',
+  ['robbery_complete'] = '~r~Raub erfolgreich.~s~ Du ~o~hast gestohlen~s~ ~g~$%s~s~',
+  ['robbery_complete_at'] = '~r~Raub erfolgreich bei: ~y~%s~s~',
+  ['robbery_cancelled'] = 'Der Raub wurde abgebrochen, du bekommst nichts!',
+  ['robbery_cancelled_at'] = '~r~Raub abgebrochen bei: ~b~%s~s~',
+  ['min_police'] = 'es müssen mindestens ~b~%s cops~s~ in der Stadt sein, um den Laden Auszurauben.',
+  ['robbery_already'] = '~r~Ein Raub ist bereits im gange.',
+  ['no_threat'] = 'Du stellen keine Gefahr für den Ladenbesitzer dar',
+}

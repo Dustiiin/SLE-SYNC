@@ -1,0 +1,94 @@
+{
+    "menu:doors": "<i class=\"bi bi-door-open-fill\"></i> Doors",
+    "menu:buildings": "<i class=\"bi bi-building\"></i> Buildings",
+    "menu:settings": "<i class=\"bi bi-gear-fill\"></i> Settings",
+
+    "menu:door": "Door",
+    "menu:new_door": "New door",
+    "menu:ID": "ID",
+    "menu:label": "Label",
+    "menu:doors_count": "Doors count",
+    "menu:default": "Default",
+    "menu:maximum_distance": "Maximum distance",
+    "menu:distance": "Distance",
+    "menu:model": "Model",
+    "menu:choose_doors": "Choose doors",
+
+    "menu:delete": "Delete",
+    "menu:close": "Close",
+    "menu:create": "Create",
+    "menu:save": "Save",
+
+    "menu:used_doors": "Used doors",
+    "menu:default_doors_state": "Default doors state",
+    "menu:unlocked": "Unlocked",
+    "menu:locked": "Locked",
+    "menu:icon_coordinates": "Icon coordinates",
+    "menu:choose": "Choose",
+    "menu:choose_icon_coords": "Choose icon coords",
+
+    "menu:requires_a_job": "Requires a job",
+    "menu:allowed_jobs": "Allowed jobs",
+    "menu:choose_jobs": "Choose jobs",
+    "menu:requires_an_item": "Requires an item",
+    "menu:required_item": "Required item",
+    "menu:choose_item": "Choose item",
+    "menu:requires_job_and_item": "Requires both job and item",
+
+    "menu:requires_a_code": "Requires a code",
+    "menu:code": "Code",
+
+    "menu:auto_closure": "Auto closure",
+    "menu:seconds_before_auto_closure": "Seconds before auto closure",
+
+    "menu:doorlock_animation": "Doorlock animation",
+
+    "menu:new_building": "New building",
+    "menu:building": "Building",
+    "menu:none": "None",
+    "menu:use_building_rules": "Use building rules",
+    "menu:choose_building": "Choose building",
+
+    "menu:jobs_dialog:title": "Jobs List",
+    "menu:jobs_dialog:search_job": "Search job",
+
+    "menu:items_dialog:title": "Items List",
+    "menu:items_dialog:search_item": "Search item",
+
+    "menu:building_dialog:title": "Buildings List",
+    "menu:building_dialog:search_building": "Search building",
+
+    "menu:settings:language": "Language",
+    "menu:save_doors_status_after_restart": "Save doors status after restart",
+    "menu:enable_doorlock_animation": "Enable doorlock animation",
+    "menu:animation_dictionary": "Animation dictionary",
+    "menu:animation_name": "Animation name",
+    "menu:animation_duration": "Animation duration",
+    "menu:settings:doorlock_icon": "Doorlock icon",
+    "menu:settings:icon_size": "Icon size",
+    "menu:item_to_lockpick_doors": "Item to lockpick doors",
+    "menu:lockpick_name": "Lockpick name",
+    "menu:minimum_quantity": "Minimum quantity",
+    "menu:lose_on_use": "Lose on use",
+
+    "menu:apply_changes": "Apply changes",
+
+    "menu:is_sliding_door": "Is sliding door",
+
+    "menu:not_allowed:you_are_not_allowed": "You are not allowed to use this menu",
+    "menu:not_allowed:if_you_are_admin": "If you are a server admin, you have to copy paste the following code in your server.cfg",
+
+    "menu:requires_an_identifier": "Requires an identifier",
+    "menu:identifier": "Identifier",
+    "menu:choose_player": "Choose player",
+    "menu:add_identifier": "Add identifier",
+
+    "menu:is_vault_door": "Is vault door",
+    "menu:speed": "Speed",
+    "menu:make_door_extremely_heavy": "Make door extremely heavy",
+    "menu:custom_angles": "Custom angles",
+    "menu:opened_angle": "Opened angle",
+    "menu:closed_angle": "Closed angle",
+
+    "menu:use_3d_text_instead_of_icon": "Use 3D text instead of icon"
+}

@@ -1,0 +1,1901 @@
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  *{
+      user-select: none;
+  }
+
+::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: transparent;
+
+}
+      .mediaViewInfo {
+          --web-view-name: Canvas;
+          --web-view-id: Canvas;
+          --web-scale-to-fit: true;
+          --web-scale-to-fit-type: width;
+          --web-enable-scale-up: true;
+          --web-scale-on-resize: true;
+          --web-center-vertically: true;
+          --web-enable-deep-linking: true;
+      }
+      :root {
+          --web-view-ids: Canvas;
+      }
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          border: none;
+      }
+      #Canvas {
+          position: absolute;
+          width: 1920px;
+          height: 1080px;
+          background-color: rgba(0,0,0,0);
+          overflow: hidden;
+          --web-view-name: Canvas;
+          --web-view-id: Canvas;
+          --web-scale-to-fit: true;
+          --web-scale-to-fit-type: width;
+          --web-enable-scale-up: true;
+          --web-scale-on-resize: true;
+          --web-center-vertically: true;
+          --web-enable-deep-linking: true;
+      }
+
+
+      .notify{
+        position: relative;
+        float:left;
+        margin-top: 20px;
+        margin-left: 5px;
+        width: 283px;
+        height: 101px;
+        background: #272727;
+        opacity: 0.95;
+        left: 30px;
+        top: 30px;
+      
+        border-radius: 5px;
+        }
+        .notify .head{
+          position: absolute;
+        width: 283px;
+        height: 31px;
+        left: 0px;
+        top: 4px;
+        
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 33px;
+        text-align: center;
+        
+        color: #FFFFFF;
+        
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        
+        .notify hr{
+          position: absolute;
+        width: 283px;
+        height: 3px;
+        left: 0px;
+        top: 40px;
+        
+        background: #9000ff;
+        opacity: 0.95;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        
+        .notify .message{
+          position: absolute;
+        width: 283px;
+        height: auto;
+        left: 0px;
+        top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color:#272727;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 21px;
+        text-align: center;
+        
+        color: #FFFFFF;
+        padding-bottom: 10px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+        }
+
+
+.claimcodes {
+    border-left: 5px solid rgba(107, 23, 176, 0.75);
+    position: relative;
+    width: 472px;
+    height: 512px;
+    top: 50%;
+    display: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(26, 26, 26, 0.95);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.adminpanelz{
+  position: absolute;
+width: 71px;
+height: 45px;
+left: 32px;
+top: 22px;
+
+background: rgba(48, 48, 48, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+
+.adminpanelz p{
+  position: absolute;
+width: 71px;
+height: 33px;
+left: 0px;
+top: 6px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.toptext{
+  position: absolute;
+width: 282px;
+height: 41px;
+left: 97px;
+top: 24px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 39px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.meinecodes{
+  position: absolute;
+  width: 71px;
+  height: 45px;
+  left: 379px;
+  top: 22px;
+  
+  background: rgba(48, 48, 48, 0.66);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.meinecodes p{
+  position: absolute;
+  width: 71px;
+  height: 33px;
+  left: 0px;
+  top: 6px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+    .adminpanelz:hover, .meinecodes:hover {
+        background: rgba(56, 16, 89, 0.66);
+    }
+    .adminpanelz:active, .meinecodes:active {
+        background: rgba(56, 16, 89, 0.66);
+    }
+.hr1{
+  position: absolute;
+width: 181px;
+height: 0px;
+left: 149px;
+top: 77px;
+opacity: 0.55;
+border: 1px solid #9000ff;
+}
+
+
+
+.toptext1{
+  position: absolute;
+width: 379px;
+height: 71px;
+left: 47px;
+top: 83px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box1{
+  position: absolute;
+width: 369px;
+height: 79px;
+left: 51px;
+top: 154px;
+
+background: rgba(48, 48, 48, 0.66);
+border-radius: 5px;
+}
+.box1 img{
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 22px;
+  top: 17px;
+  
+}
+.box1 input{
+  position: absolute;
+  width: 275px;
+  height: 35px;
+  left: 82px;
+  top: 22px;
+  color: white;
+  outline: none;
+  border:none;
+  font-family: Poppins;
+  text-align: center;
+  background: #212121;
+  border-radius: 15px;
+}
+.einlosen{
+  position: absolute;
+width: 183px;
+height: 45px;
+left: 144px;
+top: 259px;
+z-index: 9;
+background: rgba(48, 48, 48, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.einlosen p{
+  position: absolute;
+width: 183px;
+height: 33px;
+left: 2px;
+top: 13px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 18px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.einlosen:hover{
+  transition: 300ms;
+  background: rgba(26, 26, 26, 0.66);
+}
+
+.einlosen:active{
+  background: rgba(39, 39, 39, 0.66);
+}
+
+.img1{
+  position: absolute;
+  width: 420px;
+  height: 153px;
+  left: 30px;
+  top: 278px;
+
+}
+.img2{
+  position: absolute;
+  width: 125px;
+  height: 152px;
+  left: 68px;
+  top: 360px;
+}
+::-webkit-scrollbar-corner { background: transparent }
+.img3{
+  position: absolute;
+  width: 210px;
+  height: 264px;
+  left: 255px;
+  top: 248px;
+}
+
+.mycodes{
+  border-left: 5px solid rgba(107, 23, 176, 0.75);
+  position: relative;
+  width: 472px;
+  height: 512px;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+  background: rgba(26, 26, 26, 0.95);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.mycodes .toptext{
+  position: absolute;
+  width: 282px;
+  height: 41px;
+  left: 97px;
+  top: 24px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+.mycodes .back{
+  position: absolute;
+  width: 71px;
+  height: 45px;
+  left: 379px;
+  top: 22px;
+  
+  background: rgba(48, 48, 48, 0.66);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.mycodes .back p{
+  position: absolute;
+  width: 71px;
+  height: 33px;
+  left: 0px;
+  top: 13px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.mycodes .back:hover{
+  background: rgba(73, 73, 73, 0.66);
+}
+.mycodes .back:active{
+  background: rgba(38, 38, 38, 0.66);
+}
+.mycodes .hr1{
+
+  
+position: absolute;
+width: 181px;
+height: 0px;
+left: 149px;
+top: 77px;
+
+border: 1px solid #9000ff;
+}
+.mycodes .toptext1{
+  position: absolute;
+width: 350px;
+height: 71px;
+left: 105px;
+top: 70px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 19px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.mycodes .appendcodes{
+  position: absolute;
+  width: 465px;
+  height: 382px;
+  left: -2px;
+  top: 130px;
+  overflow-y: scroll;
+  padding-bottom: 25px;
+  
+}
+
+.mycodes .appendcodes .box{
+  position: relative;
+  margin-top: 10px;
+  width: 369px;
+  height: 102px;
+  left: 51px;
+  top: 0px;
+  background: rgba(48, 48, 48, 0.66);
+  border-radius: 5px;
+}
+
+.mycodes .appendcodes .box .img{
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 22px;
+  top: 26px;
+}
+
+    .mycodes .appendcodes .box .code {
+        position: absolute;
+        width: 275px;
+        height: 35px;
+        left: 82px;
+        top: 51px;
+        background: #34204d;
+        border-radius: 15px;
+    }
+.mycodes .appendcodes .box .code p{
+  position: absolute;
+  width: 235px;
+  height: 35px;
+  left: 22px;
+  top: 9px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.mycodes .appendcodes .box .text{
+  position: absolute;
+width: 275px;
+height: 42px;
+left: 82px;
+top: 13px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.adminpanel{
+  position: relative;
+  width: 945px;
+  height: 512px;
+  top: 50%;
+  display: none;
+  overflow:hidden;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(26, 26, 26, 0.75);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+}
+.adminpanel .leftbar{
+  position: absolute;
+width: 277px;
+height: 512px;
+left: 0px;
+top: 0px;
+border-left: 5px solid rgba(107, 23, 176, 1.00);
+
+background: #212121;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.adminpanel .leftbar .toptext{
+  position: absolute;
+width: 270px;
+height: 51px;
+left: 7px;
+top: 20px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 39px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .leftbar .hr{
+  position: absolute;
+width: 181px;
+height: 0px;
+left: 51px;
+top: 71px;
+
+border: 1px solid #9000ff;
+}
+.adminpanel .leftbar .infotext{
+  position: absolute;
+width: 195px;
+height: 71px;
+left: 44px;
+top: 76px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.adminpanel .leftbar .buttons{
+  position: absolute;
+width: 268px;
+height: 181px;
+left: 9px;
+top: 15px;
+float: left;
+margin-top: 15px;
+
+}
+
+
+.adminpanel .leftbar .selectitem{
+  position: relative;
+  width: 169px;
+  height: 39px;
+  left: 54px;
+  top: 106px;
+  border-left: 5px solid rgba(107, 23, 176, 0.75);
+  margin-top: 15px;
+  background: rgba(48, 48, 48, 0.66);
+  border-radius: 5px;
+}
+
+.adminpanel .leftbar .selectitem:hover{
+  background: rgba(48, 48, 48, 0.86);
+}
+.adminpanel .leftbar .selectitem:active{
+  background: rgba(14, 14, 14, 0.46);
+}
+
+.adminpanel .leftbar .selectitem p{
+  position: absolute;
+width: 146px;
+height: 38px;
+left: 12px;
+top: 11px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.adminpanel .leftbar .img1{
+  position: absolute;
+width: 105px;
+height: 152px;
+left: 16px;
+top: 391px;
+}
+.adminpanel .leftbar .img2{
+  position: absolute;
+width: 160px;
+height: 204px;
+left: 109px;
+top: 326px;
+}
+
+.adminpanel .container1{
+  position: absolute;
+width: 668px;
+height: 512px;
+left: 277px;
+top: 0px;
+display: none;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.adminpanel .container1 .topbox{
+  position: absolute;
+width: 480px;
+height: 33px;
+left: 94px;
+top: 29px;
+border-left: 5px solid rgba(107, 23, 176, 0.75);
+background: rgba(48, 48, 48, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+
+.adminpanel .container1 .topbox .text{
+  position: absolute;
+width: 186px;
+height: 26px;
+left: 157px;
+top: 4px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.adminpanel .container1 .geldbox{
+  position: absolute;
+width: 480px;
+height: 74px;
+left: 94px;
+top: 80px;
+
+background: rgba(48, 48, 48, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.adminpanel .container1 .geldbox .toptext{
+  position: absolute;
+width: 186px;
+height: 26px;
+left: 147px;
+top: 2px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container1 .geldbox .hr{
+  position: absolute;
+width: 134px;
+height: 0px;
+left: 173px;
+top: 26px;
+
+border: 1px solid rgba(99, 8, 156, 0.66);
+}
+.adminpanel .container1 .geldbox .art{
+  position: absolute;
+width: 86px;
+height: 22px;
+left: 23px;
+top: 29px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container1 .geldbox .amount{
+  position: absolute;
+width: 86px;
+height: 22px;
+left: 119px;
+top: 29px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container1 .geldbox .codeamount{
+  position: absolute;
+width: 81px;
+height: 22px;
+left: 241px;
+top: 29px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+.adminpanel .container1 .geldbox .inputart{
+  position: absolute;
+width: 90px;
+height: 17px;
+left: 19px;
+top: 48px;
+
+background: rgba(130, 130, 130, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+
+}
+.adminpanel .container1 .geldbox .inputamount{
+  position: absolute;
+width: 90px;
+height: 17px;
+left: 118px;
+top: 48px;
+
+background: rgba(130, 130, 130, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+}
+.adminpanel .container1 .geldbox .inputcodeamount{
+  position: absolute;
+width: 84px;
+height: 17px;
+left: 240px;
+top: 48px;
+
+background: rgba(130, 130, 130, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+}
+.adminpanel .container1 .geldbox .buttongen{
+  position: absolute;
+  width: 119px;
+  height: 25px;
+  left: 349px;
+  top: 43px;
+  border-left: 5px solid rgba(107, 23, 176, 0.75);
+  background: rgba(48, 48, 48, 0.66);
+  border-radius: 5px;
+}
+.adminpanel .container1 .geldbox .buttongen p{
+  position: absolute;
+  width: 96px;
+  height: 22px;
+  left: 10px;
+  top: 3px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+.adminpanel .container1 .geldbox .buttongen:hover{
+  border-left: 5px solid rgba(206, 206, 56, 0.75);
+  background: rgba(29, 29, 29, 0.66);
+}
+.adminpanel .container1 .geldbox .buttongen:active{
+  border-left: 5px solid rgba(61, 61, 13, 0.75);
+  background: rgba(16, 16, 16, 0.66);
+}
+
+.adminpanel .container1 .itembox{
+  position: absolute;
+  width: 480px;
+  height: 74px;
+  left: 94px;
+  top: 172px;
+  
+  background: rgba(48, 48, 48, 0.66);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.adminpanel .container1 .itembox .toptext{
+  position: absolute;
+width: 186px;
+height: 26px;
+left: 147px;
+top: 2px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container1 .itembox .hr{
+  position: absolute;
+width: 134px;
+height: 0px;
+left: 173px;
+top: 26px;
+
+border: 1px solid rgba(99, 8, 156, 0.66);
+}
+.adminpanel .container1 .itembox .art{
+  position: absolute;
+width: 86px;
+height: 22px;
+left: 23px;
+top: 29px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container1 .itembox .amount{
+  position: absolute;
+width: 86px;
+height: 22px;
+left: 119px;
+top: 29px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container1 .itembox .codeamount{
+  position: absolute;
+width: 81px;
+height: 22px;
+left: 241px;
+top: 29px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+.adminpanel .container1 .itembox .inputart{
+  position: absolute;
+width: 90px;
+height: 17px;
+left: 19px;
+top: 48px;
+
+background: rgba(130, 130, 130, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+}
+.adminpanel .container1 .itembox .inputamount{
+  position: absolute;
+width: 90px;
+height: 17px;
+left: 118px;
+top: 48px;
+
+background: rgba(130, 130, 130, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+}
+.adminpanel .container1 .itembox .inputcodeamount{
+  position: absolute;
+width: 84px;
+height: 17px;
+left: 240px;
+top: 48px;
+
+background: rgba(130, 130, 130, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+}
+.adminpanel .container1 .itembox .buttongen{
+  position: absolute;
+  width: 119px;
+  height: 25px;
+  left: 349px;
+  top: 43px;
+  border-left: 5px solid rgba(107, 23, 176, 0.75);
+  background: rgba(48, 48, 48, 0.66);
+  border-radius: 5px;
+}
+.adminpanel .container1 .itembox .buttongen p{
+  position: absolute;
+  width: 96px;
+  height: 22px;
+  left: 10px;
+  top: 3px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+.adminpanel .container1 .itembox .buttongen:hover{
+  border-left: 5px solid rgba(206, 206, 56, 0.75);
+  background: rgba(29, 29, 29, 0.66);
+}
+.adminpanel .container1 .itembox .buttongen:active{
+  border-left: 5px solid rgba(61, 61, 13, 0.75);
+  background: rgba(16, 16, 16, 0.66);
+}
+
+
+
+
+
+
+
+
+
+.adminpanel .container1 .fahrzeugbox{
+
+  position: absolute;
+  width: 480px;
+  height: 74px;
+  left: 94px;
+  top: 264px;
+  
+  background: rgba(48, 48, 48, 0.66);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.adminpanel .container1 .fahrzeugbox .toptext{
+  position: absolute;
+width: 186px;
+height: 26px;
+left: 147px;
+top: 2px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container1 .fahrzeugbox .hr{
+  position: absolute;
+width: 134px;
+height: 0px;
+left: 173px;
+top: 26px;
+
+border: 1px solid rgba(99, 8, 156, 0.66);
+}
+.adminpanel .container1 .fahrzeugbox .art{
+  position: absolute;
+  width: 186px;
+  height: 22px;
+  left: 23px;
+  top: 30px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+  
+
+}
+.adminpanel .container1 .fahrzeugbox .amount{
+  position: absolute;
+width: 86px;
+height: 22px;
+left: 119px;
+top: 29px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container1 .fahrzeugbox .codeamount{
+  position: absolute;
+width: 81px;
+height: 22px;
+left: 241px;
+top: 29px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+.adminpanel .container1 .fahrzeugbox .inputart{
+  position: absolute;
+  width: 193px;
+  height: 17px;
+left: 19px;
+top: 48px;
+
+background: rgba(130, 130, 130, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+}
+.adminpanel .container1 .fahrzeugbox .inputamount{
+  position: absolute;
+width: 90px;
+height: 17px;
+left: 118px;
+top: 48px;
+
+background: rgba(130, 130, 130, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+}
+.adminpanel .container1 .fahrzeugbox .inputcodeamount{
+  position: absolute;
+width: 84px;
+height: 17px;
+left: 240px;
+top: 48px;
+
+background: rgba(130, 130, 130, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+}
+.adminpanel .container1 .fahrzeugbox .buttongen{
+  position: absolute;
+  width: 119px;
+  height: 25px;
+  left: 349px;
+  top: 43px;
+  border-left: 5px solid rgba(107, 23, 176, 0.75);
+  background: rgba(48, 48, 48, 0.66);
+  border-radius: 5px;
+}
+.adminpanel .container1 .fahrzeugbox .buttongen p{
+  position: absolute;
+  width: 96px;
+  height: 22px;
+  left: 10px;
+  top: 3px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+.adminpanel .container1 .fahrzeugbox .buttongen:hover{
+  border-left: 5px solid rgba(206, 206, 56, 0.75);
+  background: rgba(29, 29, 29, 0.66);
+}
+.adminpanel .container1 .fahrzeugbox .buttongen:active{
+  border-left: 5px solid rgba(61, 61, 13, 0.75);
+  background: rgba(16, 16, 16, 0.66);
+}
+
+.adminpanel .container1 .generiertecodes{
+  position: absolute;
+width: 480px;
+height: 107px;
+left: 94px;
+top: 356px;
+
+background: rgba(48, 48, 48, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.adminpanel .container1 .generiertecodes .top{
+  position: absolute;
+width: 213px;
+height: 26px;
+left: 133px;
+top: 0px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container1 .generiertecodes .hr{
+  
+position: absolute;
+width: 134px;
+height: 0px;
+left: 173px;
+top: 26px;
+
+border: 1px solid rgba(99, 8, 156, 0.66);
+}
+.adminpanel .container1 .generiertecodes .textarea{
+  position: absolute;
+  width: 445px;
+  height: 64px;
+  left: 17px;
+  top: 35px;
+  
+  background: rgba(130, 130, 130, 0.66);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  resize: none;
+  text-align: center;
+  border:none;
+  font-family: Poppins;
+}
+
+
+.adminpanel .container1 .buttoncopy{
+  position: absolute;
+width: 169px;
+height: 27px;
+left: 405px;
+top: 473px;
+border-left: 5px solid rgba(107, 23, 176, 0.75);
+background: rgba(48, 48, 48, 0.66);
+border-radius: 5px;
+}
+.adminpanel .container1 .buttoncopy p{
+  position: absolute;
+width: 146px;
+height: 22px;
+left: 14px;
+top: 4px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.adminpanel .container1 .buttoncopy12{
+  position: absolute;
+width: 210px;
+height: 27px;
+left: 94px;
+top: 473px;
+border-left: 5px solid rgba(107, 23, 176, 0.75);
+background: rgba(48, 48, 48, 0.66);
+border-radius: 5px;
+}
+.adminpanel .container1 .buttoncopy12 p{
+  position: absolute;
+width: 190;
+height: 22px;
+left: 8px;
+top: 4px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.adminpanel .container2{
+  position: absolute;
+width: 668px;
+height: 512px;
+left: 277px;
+top: 0px;
+display: none;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.adminpanel .container2 .topbox{
+  position: absolute;
+width: 480px;
+height: 33px;
+left: 94px;
+top: 29px;
+border-left: 5px solid rgba(107, 23, 176, 0.75);
+background: rgba(48, 48, 48, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.adminpanel .container2 .topbox .text{
+  position: absolute;
+  width: 473px;
+  height: 26px;
+  left: 7px;
+  top: 5px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+    
+}
+
+.adminpanel .container2 .appends{
+  position: absolute;
+width: 531px;
+height: 428px;
+left: 68px;
+top: 100px;
+overflow-y: scroll;
+padding-bottom: 15px;
+}
+.adminpanel .container2 .appends .genbox{
+  position: relative;
+width: 480px;
+height: 124px;
+left: 26px;
+margin-top: 15px;
+top: 14px;
+float: left;
+background: rgba(48, 48, 48, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+
+.adminpanel .container2 .appends .genbox .toptext{
+  position: absolute;
+width: 474px;
+height: 26px;
+left: 6px;
+top: 0px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container2 .appends .genbox .hr{
+  position: absolute;
+width: 34px;
+height: 0px;
+left: 6px;
+top: 27px;
+
+border: 1px solid rgba(99, 8, 156, 0.66);
+}
+
+.adminpanel .container2 .appends .genbox .code{
+  position: absolute;
+width: 123px;
+height: 22px;
+left: 6px;
+top: 37px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container2 .appends .genbox .itemtype{
+  position: absolute;
+width: 123px;
+height: 22px;
+left: 6px;
+top: 60px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container2 .appends .genbox .value{
+  position: absolute;
+width: 123px;
+height: 22px;
+left: 6px;
+top: 83px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container2 .appends .genbox .codeoutput{
+  position: absolute;
+width: 213px;
+height: 22px;
+left: 129px;
+top: 37px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 9px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container2 .appends .genbox .itemtypeoutput{
+  position: absolute;
+width: 213px;
+height: 22px;
+left: 129px;
+top: 60px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container2 .appends .genbox .valueoutput{
+  position: absolute;
+width: 213px;
+height: 22px;
+left: 129px;
+top: 83px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container2 .appends .genbox .button1{
+  position: absolute;
+width: 119px;
+height: 25px;
+left: 342px;
+top: 38px;
+border-left: 5px solid rgba(107, 23, 176, 0.75);
+background: rgba(48, 48, 48, 0.66);
+border-radius: 5px;
+}
+.adminpanel .container2 .appends .genbox .button1 .text{
+  position: absolute;
+width: 96px;
+height: 22px;
+left: 14px;
+top: 2px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container2 .appends .genbox .button2{
+  position: absolute;
+width: 119px;
+height: 25px;
+left: 342px;
+top: 69px;
+border-left: 5px solid rgba(107, 23, 176, 0.75);
+background: rgba(48, 48, 48, 0.66);
+border-radius: 5px;
+}
+.adminpanel .container2 .appends .genbox .button2 .text{
+  position: absolute;
+width: 96px;
+height: 22px;
+left: 14px;
+top: 2px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+
+
+
+
+
+
+
+
+.adminpanel .container3{
+  position: absolute;
+width: 668px;
+height: 512px;
+left: 277px;
+top: 0px;
+display: none;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.adminpanel .container3 .topbox{
+  position: absolute;
+width: 480px;
+height: 33px;
+left: 94px;
+top: 29px;
+border-left: 5px solid rgba(107, 23, 176, 0.75);
+background: rgba(48, 48, 48, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.adminpanel .container3 .topbox .text{
+  position: absolute;
+  width: 473px;
+  height: 26px;
+  left: 7px;
+  top: 5px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+    
+}
+
+.adminpanel .container3 .appends{
+  position: absolute;
+width: 531px;
+height: 428px;
+left: 68px;
+top: 85px;
+
+overflow-y: scroll;
+padding-bottom: 15px;
+}
+.adminpanel .container3 .appends .genbox{
+  position: relative;
+width: 480px;
+height: 124px;
+left: 26px;
+margin-top: 15px;
+top: 14px;
+float: left;
+background: rgba(48, 48, 48, 0.66);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+
+.adminpanel .container3 .appends .genbox .toptext{
+  position: absolute;
+width: 474px;
+height: 26px;
+left: 6px;
+top: 0px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+line-height: 24px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container3 .appends .genbox .hr{
+  position: absolute;
+width: 34px;
+height: 0px;
+left: 6px;
+top: 27px;
+
+border: 1px solid rgba(99, 8, 156, 0.66);
+}
+
+.adminpanel .container3 .appends .genbox .code{
+  position: absolute;
+width: 123px;
+height: 22px;
+left: 6px;
+top: 37px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container3 .appends .genbox .itemtype{
+  position: absolute;
+width: 123px;
+height: 22px;
+left: 6px;
+top: 60px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container3 .appends .genbox .value{
+  position: absolute;
+width: 123px;
+height: 22px;
+left: 6px;
+top: 83px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container3 .appends .genbox .codeoutput{
+  position: absolute;
+width: 213px;
+height: 22px;
+left: 129px;
+top: 37px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 9px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container3 .appends .genbox .itemtypeoutput{
+  position: absolute;
+width: 213px;
+height: 22px;
+left: 129px;
+top: 60px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container3 .appends .genbox .valueoutput{
+  position: absolute;
+width: 213px;
+height: 22px;
+left: 129px;
+top: 83px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.adminpanel .container3 .appends .genbox .button1{
+
+  position: absolute;
+  width: 119px;
+  height: 25px;
+  left: 342px;
+  top: 58px;
+  border-left: 5px solid rgba(107, 23, 176, 0.75);
+  background: rgba(48, 48, 48, 0.66);
+  border-radius: 5px;
+}
+
+.adminpanel .container3 .appends .genbox .button1:hover{
+  background: rgba(33, 33, 33, 0.66);
+}
+.adminpanel .container3 .appends .genbox .button1:active{
+  background: rgba(63, 63, 63, 0.66);
+}
+.adminpanel .container3 .appends .genbox .button1 .text{
+  position: absolute;
+  width: 96px;
+  height: 22px;
+  left: 9px;
+  top: 7px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+  
+
+}
+
+.search1{
+  position: absolute;
+width: 342px;
+height: 23px;
+left: 173px;
+top: 73px;
+z-index: 9;
+outline: none;
+border: none;
+font-family: Poppins;
+color: white;
+text-align: center;
+background: #A9A9A9;
+border-radius: 5px;
+}
+
+.return{
+  z-index: 9;
+  position: absolute;
+  width: 35px;
+  fill: green;
+  bottom: 165px;
+  left: 135px;
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="ui.js"></script>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+    user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	.container {
+        display:  none;
+        background:linear-gradient(50deg, #000000 0%, #242323 45%, rgb(88, 88, 88) 100%);
+		position: absolute;
+		width: 1000px;
+		height: 476px;
+		left: 482px;
+		top: 352px;
+        border-radius: 20px;
+		overflow: visible;
+	}
+	#bg2 {
+		position: absolute;
+		width: 1157px;
+		height: 476px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Logo {
+		position: absolute;
+		width: 97.895px;
+		height: 162.158px;
+		left: 130.552px;
+		top: 156.921px;
+		overflow: visible;
+	}
+	.close {
+		position: absolute;
+        width: 20px;
+        left:91%;
+        top:3%;
+	}
+	#scarface_4 {
+		fill: rgba(19,19,19,1);
+	}
+	.scarface_4 {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#x_1 {
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		left: 9px;
+		top: 9px;
+		overflow: visible;
+	}
+.close {
+}
+
+
+p.desc {
+    z-index: 1000;
+    color: #f80a0f;
+    text-align: center;
+    margin-top: -5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+p.title {
+    z-index: 1000;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.items-content {
+    z-index: 1000;
+    position: relative;
+    height: 350px;
+    float: left;
+    top: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+    width: 650px;
+    overflow: hidden;
+}
+
+.items-content::-webkit-scrollbar {
+    z-index: 1000;
+    width: 8px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+.items-content::-webkit-scrollbar-track {
+    z-index: 1000;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.items-content::-webkit-scrollbar-thumb {
+    z-index: 1000;
+    background-color:none;
+    border-radius: 15px;
+}
+
+.items-element {
+    z-index: 1000;
+    position: relative;
+    width: 120px;
+    height: 110px;
+    background-color: rgb(29, 29, 29);
+    border: 1.5px solid rgb(92, 92, 92);
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.items-element2 {
+    z-index: 1000;
+    position: relative;
+    width: 130px;
+    height: 70px;
+    background-color: rgb(19, 19, 19);
+    border: 1.5px solid rgb(92, 92, 92);
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 3px;
+
+
+
+    border-radius: 10px;
+}
+
+.items-element-inner {
+    z-index: 1000;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 150px;
+    top: -40px;
+    left:-25%;
+    color:  green;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center;
+}
+
+.line{
+
+    
+    position: absolute;
+    background-color: white;
+    width: 1px;
+    height: 50px;
+    top:33%;
+    left:74%;
+}
+ 
+.items-element-sub {
+    z-index: 1000;
+    position: relative;
+    width: 100%;
+    height: 110px;
+    font-weight: 300;
+    background-color: transparent;
+    top: -205px;
+    left:30px;
+    border-radius: 12px;
+    color:  green;
+    line-height: 190px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.items-element-sub2 {
+    z-index: 1000;
+    position: relative;
+    width: 100%;
+    height: 110px;
+    font-weight: 300;
+    background-color: transparent;
+    top: -330px;
+    left:30px;
+    border-radius: 12px;
+    color:  white;
+    line-height: 190px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
+.items-element-sub:hover {
+    opacity: .7;
+}
+
+.warenkorb {
+    z-index: 1000;
+    position: relative;
+    float: right;
+    top: 0px;
+    right: 0px;
+    width: 350px;
+    height: 476px;
+    color: #f80a0f;
+    text-align: center;
+    border-radius: 0px 15px 15px 0px;
+    background:linear-gradient(150deg, #000000 0%, #242323 45%, rgb(88, 88, 88) 100%);
+}
+.warenkorb h1 {
+    margin-top: 35px;
+    z-index: 1000;
+    font-weight: 100;
+    font-size: 23px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.warenkorb .warenkorb-preis {
+    margin-top:  5px;
+    z-index: 1000;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top:21%;
+    left:30%;
+}
+
+.dings{
+
+    position: absolute;
+    background:linear-gradient(200deg, #000000 0%, #242323 45%, rgb(56, 56, 56) 100%);
+    width: 350px;
+    height: 100px;
+    left:0%;
+    top:79%;
+    border-radius: 0px 0px 15px 0px;
+
+
+}
+
+.warenkorb .warenkorb-zahl {
+    z-index: 1000;
+    font-weight: 300;
+    text-align: center;
+    color: green;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 270px;
+    padding-left: 180px;
+    padding-right: 75px;
+    background-color: rgb(29, 29, 29);
+    border: 1.5px solid rgb(92, 92, 92);
+    font-size: 12px;
+    border-radius: 6px;
+    margin: auto;
+    left:12%;
+    top:20%;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.warenkorb-list {
+    z-index: 1000;
+    position: relative;
+    width: 85%;
+    height: 294px;
+    top:-2%;
+    margin-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.warenkorb-list::-webkit-scrollbar {
+    z-index: 1000;
+    width: 5px;
+    height: 15px;
+}
+
+.warenkorb-list::-webkit-scrollbar-track {
+    z-index: 1000;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.warenkorb-list::-webkit-scrollbar-thumb {
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.warenkorb-list-elem {
+    z-index: 1000;
+    position: relative;
+    width: 59%;
+    height: 29px;
+    float: left;
+    margin-top: 10px;
+    font-weight: 600;
+    left:63px;
+    top:50px;
+    background-color: rgb(29, 29, 29);
+    border: 1.5px solid rgb(92, 92, 92);
+    border-radius: 5px;
+}
+
+.warenkorb-list-elem p {
+    z-index: 1000;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    line-height: 5px;
+    margin-top:  10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+
+button {
+    z-index: 1000;
+    top: 30px;
+    position: relative;
+    width: 50%;
+    height: 25px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 5px;
+    background-color: rgb(29, 29, 29);
+    border: 1.5px solid rgb(92, 92, 92);
+    outline: none;
+
+}
+
+button:hover {
+    z-index: 1000;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: 500ms;
+}
+* {
+    font-family: Poppins;
+}
+
+@-webkit-keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+@keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+
+#test {
+    z-index: -1;
+    display: block;
+    position: absolute;
+        width: 1157px;
+        height: 476px;
+        left: 0px;
+        top: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.logo{
+
+    position: absolute;
+    left:4%;
+    top:4%;
+
+}
+p.text{
+
+position: absolute;
+width: 666px;
+height: 26px;
+left: 350px;
+top: 40px;
+text-align: center;
+font-family: Poppins;
+font-style: normal;
+font-size: 27px;
+line-height: 27px;
+
+
+color: white;
+
+}    
+
+.tesx {
+    margin-top: 35px;
+    z-index: 1000;
+    position: absolute;
+    top:0%;
+    left:25%;
+    font-weight: 100;
+    font-size: 23px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+    <div id="Canvas">
+        <div class="container">
+            <p class="tesx">E I N K A U F S L A D E N</p>
+            <img class="logo" src="logos.png"></img>
+            <div id="items-content" class="items-content">
+                <div id="items-container" class="items-container"></div>
+            </div>
+            <div class="warenkorb">
+                <h1>W A R E N K O R B</h1>
+                <img class="close" src="close.png"></img>
+                <div class="divider"></div>
+                <div id="warenkorb-list" class="warenkorb-list"></div>
+                <div class="dings">
+                    <p class="warenkorb-zahl" id="warenkorb-1">+ 2,500 $</p>
+                    <p class="warenkorb-preis">S U M M E  : </p>
+                    <br>
+                    <button type="button" onclick="buy()">KAUFEN</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

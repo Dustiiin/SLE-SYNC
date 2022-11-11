@@ -1,0 +1,15 @@
+Locales['cs'] = {
+  ['bong'] = '~INPUT_PARACHUTE_DEPLOY~Kourit ~INPUT_VEH_DUCK~Uklidit                          ~INPUT_VEH_FLY_ATTACK_CAMERA~Podat ~INPUT_SCRIPTED_FLY_ZUP~Naplnit | %s g',
+  ['vape'] = '~INPUT_PARACHUTE_DEPLOY~Kourit ~INPUT_VEH_DUCK~Uklidit                          ~INPUT_VEH_FLY_ATTACK_CAMERA~Podat ~INPUT_SCRIPTED_FLY_ZUP~Naplnit | %s ml',
+  ['hand'] = '~INPUT_PARACHUTE_DEPLOY~Kourit ~INPUT_VEH_DUCK~Zahodit                     ~INPUT_VEH_FLY_ATTACK_CAMERA~Podat ~INPUT_SCRIPTED_FLY_ZUP~Pusa',
+  ['mouth'] = '~INPUT_PARACHUTE_DEPLOY~Kourit ~INPUT_VEH_DUCK~Zahodit                     ~INPUT_VEH_FLY_ATTACK_CAMERA~Podat ~INPUT_SCRIPTED_FLY_ZDOWN~Ruka',
+  ['give'] = '~INPUT_PICKUP~Podat ~INPUT_VEH_DUCK~Zrusit',
+  ['menu_title'] = 'Bong',
+  ['enough'] = 'Mám dost.',
+  ['empty'] = 'Máš to prázdné.',
+  ['nospace'] = 'Víc se tam toho nevejde',
+  ['already_smoke'] = 'Už kouříš',
+  ['need_lighter'] = 'Potřebuješ zapalovač',
+  ['need_liquid'] = 'Potřebuješ liquid',
+  ['dont_have'] = 'Tento předmět nemáš',
+}

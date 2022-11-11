@@ -1,0 +1,28 @@
+{
+  // Variables Guide: https://github.com/saltminede/saltychat-docs/blob/master/setup.md#config-variables
+  "VoiceEnabled": true,
+  "ServerUniqueIdentifier": "+/yCrgA+TzHT5vgLmrf9CxioTM4=",
+  "MinimumPluginVersion": "2.3.0",
+  "SoundPack": "default",
+  "IngameChannelId": 30,
+  "IngameChannelPassword": "saltyradio",
+  "SwissChannelIds": [ 1, 2, 3, 4, 5, 7, 8, 22, 23, 25, 26, 10, 11, 12, 13, 14, 15, 16, 17, 27, 28, 31, 32, 33, 36, 37, 39, 34, 40, 41, 42, 35, 43, 44 ],
+  "VoiceRanges": [ 3.5, 8, 15, 32 ],
+  "EnableVoiceRangeNotification": false,
+  "VoiceRangeNotification": "Deine neue Sprachreichweite ist {voicerange} meter.",
+  "RadioType": 4,
+  "EnableRadioHardcoreMode": true,
+  "UltraShortRangeDistance": 1800.0,
+  "ShortRangeDistance": 3000.0,
+  "LongRangeDistace": 8000.0,
+  "MegaphoneRange": 120.0,
+  "NamePattern": "{guid}",
+  "RequestTalkStates": true,
+  "RequestRadioTrafficStates": true,
+
+  // Keybinds: https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
+  "ToggleRange": "^",
+  "TalkPrimary": "N",
+  "TalkSecondary": "CAPITAL",
+  "TalkMegaphone": "M"
+}

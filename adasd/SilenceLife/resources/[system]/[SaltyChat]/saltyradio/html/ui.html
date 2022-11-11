@@ -1,0 +1,114 @@
+<!doctype HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <title>Funk</title>
+</head>
+
+<body>
+  <img id="cursor" src="img/cursor.png">
+  <div class="container-fixed radio-container">
+    <nav class="navbar navbar-dark rounded-top bg-dark py-0 justify-content-center">
+      <a class="navbar-brand py-0" id="navbar-title">
+        <span class="text-danger"><i class="fas fa-times"></i> Offline</span> &mdash; <span class="text-warning "><font color="red"> NAME </font></span> Funk 
+      </a>
+    </nav>
+
+    <div class="card text-center h-100">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-controls="home" aria-selected="false">Funk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="favorites-tab" data-toggle="tab" href="#favorites" role="tab"
+              aria-controls="favorites" aria-selected="false">Favoriten</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab"
+              aria-controls="history" aria-selected="false">Verlauf</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body tab-content">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <form>
+            <div class="input-group mb-3">
+              <input type="number" id="radio-channel" class="form-control" min="1" step="1" max="1000"
+                placeholder="10 - 1000" aria-label="Funkkanal" aria-describedby="mhz-append">
+              <div class="input-group-append">
+                <span class="input-group-text" id="mhz-append">MHz</span>
+              </div>
+            </div>
+
+
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-danger" id="radio-disconnect"><i class="fas fa-unlink"></i></button>
+              <button type="button" class="btn btn-success" id="radio-connect"><i class="fas fa-link"></i>
+                Verbinden</button>
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="favorites" role="tabpanel" aria-labelledby="favorites-tab">
+            <div class="row">
+              <div class="col-12">
+                  <label for="radio-favorites-name">Aktuellen Kanal favorisieren</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="radio-favorites-name" placeholder="Name" aria-label="Name" aria-describedby="radio-favorites-add">
+                    <div class="input-group-append">
+                      <button type="button" class="btn btn-warning text-white" id="radio-favorites-add">
+                        <i class="fas fa-star"></i> Speichern
+                      </button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12">
+                  <p>Meine Favoriten</p>
+                  <select id="favorites-container" class="form-control favorites" size="10">
+                  </select>
+                  <span class="small text-muted">Doppelklick zum verbinden<br />ENTF zum löschen</span>
+              </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+            <div class="row mt-3">
+              <div class="col-12">
+                  <p>Letzte Funkkanäle</p>
+                  <span class="small text-muted">Doppelklick zum verbinden</span>
+                  <select id="history-container" class="form-control history" size="10">
+                  </select>
+                  <button type="button" class="btn btn-danger text-white my-5" id="radio-history-clear">
+                    <i class="fas fa-trash"></i> Verlauf leeren
+                  </button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

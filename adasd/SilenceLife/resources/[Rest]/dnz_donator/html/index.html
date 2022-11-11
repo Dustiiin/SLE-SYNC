@@ -1,0 +1,226 @@
+<html>
+<head>
+        <!-- Made by dnz -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="./rescale.js" type="text/javascript"></script>
+        <script src="./index.js" type="text/javascript"></script>
+        <style id="applicationStylesheet" type="text/css"></style>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+         <!-- Made by dnz -->
+</head>
+<body>
+        <div id="Canvas" class="Canvas">
+                <div class="notifications" id="notifications">
+                        <!-- <div class="notify">
+                                <div class="head">Spenden System</div>
+                                <hr>
+                                <div class="message"> Du hast einen Code eingelöst: IWAJDIAJDAJDAJDADIJADJIQWEQWE Typ: Geld | Anzahl: 12345 </div>
+                        </div> -->
+                </div>
+
+                <div class="claimcodes">
+                        <div class="adminpanelz" onclick="getItems();"><p>Admin Panel</p></div>
+                        <div class="toptext">DARKSIDE</div>
+                        <div class="meinecodes" onclick="getMyCodes()"><p>Meine Codes</p></div>
+                        <div class="hr1"></div>
+                        <div class="toptext1">Hier kannst du einen Code einlösen insofern du einen hast.</div>
+                        <div class="box1">
+                                <img src="code.png" alt="">
+                                <input type="text" placeholder="ABCDEFGHIJKLMNOPQRSTUVWXYZ" id="mycodeinputredeem">
+                        </div>
+                        <div class="einlosen" id="redeemcodebutton"><p>Code einlösen</p></div>
+                        <img src="2.png" alt="" class="img1">
+                        <img src="1.png" alt="" class="img2">
+                        <img src="3.png" alt="" class="img3">
+                </div>
+
+                <div class="mycodes">
+                        <div class="toptext">DARKSIDE</div>
+                        <div class="back" id="backdonator"><p>Zurück</p></div>
+                        <div class="hr1"></div>
+                        <div class="toptext1">Hier findest du deine eingelösten Codes</div>
+                                <div class="appendcodes" id="myusedcodes">
+
+                                </div>
+                        </div>
+                </div>
+
+                <div class="adminpanel">
+                        <div class="leftbar">
+                                <div class="toptext">DARKSIDE</div>
+                                <div class="hr"></div>
+                                <div class="infotext">Willkommen, hier kannst du alle Donation Codes für deinen Server Managen.</div>
+                                <div class="buttons">
+                                        <div class="selectitem 1" onclick="load('.container1')"><p>Codes erstellen</p></div>
+                                        <div class="selectitem 2" onclick="load('.container2'); refreshCodes();"><p>Codes verwalten</p></div>
+                                        <div class="selectitem 3" onclick="load('.container3'); refreshCodes()"> <p>Eingelöste Codes</p></div>
+                                </div>
+                                <img src="back.png" alt="" class="return">
+                                <img src="1.png" alt="" class="img1">
+                                <img src="3.png" alt="" class="img2">
+                        </div>
+
+                        <div class="container1">
+                                <div class="topbox">
+                                        <div class="text">Codes erstellen</div>
+                                </div>
+                                <div class="geldbox">
+                                        <div class="toptext">Geld</div>
+                                        <div class="hr"></div>
+                                        <div class="art">Art</div>
+                                        <div class="amount">Betrag</div>
+                                        <div class="codeamount">Code Anzahl</div>
+                                        <select name="inpurtart" class="inputart" id="geldtyp">
+                                                <option value="schwarzgeld">Schwarzgeld</option>
+                                                <option value="bank">Bank</option>
+                                                <option value="cash">Bargeld</option>
+                                        </select>
+                                        <input type="number" min="0" placeholder="0" class="inputamount" id="inputamountmoney">
+                                        <input type="number" min="0" placeholder="0" class="inputcodeamount" id="codeamountmoney">
+                                        <div class="buttongen" id="geldcodeerstellen"><p>Generieren</p></div>
+                                </div>
+
+                                <div class="itembox">
+                                        <div class="toptext">Items</div>
+                                        <div class="hr"></div>
+                                        <div class="art">Item</div>
+                                        <div class="amount">Stückzahl</div>
+                                        <div class="codeamount">Code Anzahl</div>
+
+                                        <select name="inpurtart" class="inputart" id="itemauswahlqq">
+                 
+                                        </select>
+
+                                        <input type="number" min="0" placeholder="0" class="inputamount" id="iteminputamount">
+                                        <input type="number" min="0" placeholder="0" class="inputcodeamount" id="itemcodeamount">
+                                        <div class="buttongen" id="createitemcode"><p>Generieren</p></div>
+                                </div>
+
+                                
+                                <div class="fahrzeugbox">
+                                        <div class="toptext">Fahrzeuge</div>
+                                        <div class="hr"></div>
+                                        <div class="art">Fahrzeug</div>
+                                        <div class="codeamount">Code Anzahl</div>
+                                        <select name="inpurtart" class="inputart" id="fahrzeuginputsss">
+                    
+                                        </select>
+                                        <input type="number" min="0" placeholder="0" class="inputcodeamount" id="codeamountvehicle">
+                                        <div class="buttongen" id="createvehiclecode"> <p>Generieren</p></div>
+                                </div>
+                                <div class="generiertecodes">
+                                        <div class="top">Deine generierten Codes</div>
+                                        <div class="hr"></div>
+                                        <textarea name="inputcodes" id="codesoutput" placeholder="" class="textarea" cols="30" rows="10" value="wwqwq" readonly></textarea>
+                                </div>
+                                <div class="buttoncopy" onclick="CopyWhole()"><p>Alles kopieren</p></div>
+                                <div class="buttoncopy12" onclick="createPremiumKey()"><p>1 Monat Premium Key erstellen</p></div>
+                        </div>
+
+                        <div class="container2">
+                                <div class="topbox"><div class="text" id="codesverwaltentext">Codes verwalten [Aktive Codes: 2555]</div></div>
+                                <input type="text" class="search1" id="searchactive" placeholder="Suche..">
+                                <div class="appends" id="activecodesbox">
+                                        <div class="genbox">
+                                                <div class="toptext">Item | Generiert von: dnz</div>
+                                                <div class="hr"></div>
+                                                <div class="code">Code:</div>
+                                                <div class="itemtype">Item/Type:</div>
+                                                <div class="value">Anzahl/Value:</div>
+                                                <div class="codeoutput">XXXXXXXXXXXXXXXX</div>
+                                                <div class="itemtypeoutput">Brot</div>
+                                                <div class="valueoutput">25000x</div>
+                                                <div class="button1"><div class="text">Löschen</div></div>
+                                                <div class="button2"><div class="text">Kopieren</div></div>
+                                        </div>
+
+                                        <div class="genbox">
+                                                <div class="toptext">Item | Generiert von: dnz</div>
+                                                <div class="hr"></div>
+                                                <div class="code">Code:</div>
+                                                <div class="itemtype">Item/Type:</div>
+                                                <div class="value">Anzahl/Value:</div>
+                                                <div class="codeoutput">XXXXXXXXXXXXXXXX</div>
+                                                <div class="itemtypeoutput">Brot</div>
+                                                <div class="valueoutput">25000x</div>
+                                                <div class="button1"><div class="text">Löschen</div></div>
+                                                <div class="button2"><div class="text">Kopieren</div></div>
+                                        </div>
+
+                                        <div class="genbox">
+                                                <div class="toptext">Item | Generiert von: dnz</div>
+                                                <div class="hr"></div>
+                                                <div class="code">Code:</div>
+                                                <div class="itemtype">Item/Type:</div>
+                                                <div class="value">Anzahl/Value:</div>
+                                                <div class="codeoutput">XXXXXXXXXXXXXXXX</div>
+                                                <div class="itemtypeoutput">Brot</div>
+                                                <div class="valueoutput">25000x</div>
+                                                <div class="button1"><div class="text">Löschen</div></div>
+                                                <div class="button2"><div class="text">Kopieren</div></div>
+                                        </div>
+                                        <div class="genbox">
+                                                <div class="toptext">Item | Generiert von: dnz</div>
+                                                <div class="hr"></div>
+                                                <div class="code">Code:</div>
+                                                <div class="itemtype">Item/Type:</div>
+                                                <div class="value">Anzahl/Value:</div>
+                                                <div class="codeoutput">XXXXXXXXXXXXXXXX</div>
+                                                <div class="itemtypeoutput">Brot</div>
+                                                <div class="valueoutput">25000x</div>
+                                                <div class="button1"><div class="text">Löschen</div></div>
+                                                <div class="button2"><div class="text">Kopieren</div></div>
+                                        </div>
+
+                                        <div class="genbox">
+                                                <div class="toptext">Item | Generiert von: dnz</div>
+                                                <div class="hr"></div>
+                                                <div class="code">Code:</div>
+                                                <div class="itemtype">Item/Type:</div>
+                                                <div class="value">Anzahl/Value:</div>
+                                                <div class="codeoutput">XXXXXXXXXXXXXXXX</div>
+                                                <div class="itemtypeoutput">Brot</div>
+                                                <div class="valueoutput">25000x</div>
+                                                <div class="button1"><div class="text">Löschen</div></div>
+                                                <div class="button2"><div class="text">Kopieren</div></div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        
+                        <div class="container3">
+                                <div class="topbox"><div class="text" id="cdseinlosentop">Eingelöste Codes [Eingelöst: 25000]</div></div>
+                                <input type="text" class="search1" id="searchused" placeholder="Suche..">
+                                <div class="appends" id="inactivecodesbox">
+                                        <div class="genbox" >
+                                                <div class="toptext">Item | Eingelöst von: dnz | Identifier: steam:12313213131231</div>
+                                                <div class="hr"></div>
+                                                <div class="code">Code:</div>
+                                                <div class="itemtype">Item/Type:</div>
+                                                <div class="value">Anzahl/Value:</div>
+                                                <div class="codeoutput">XXXXXXXXXXXXXXXX</div>
+                                                <div class="itemtypeoutput">Brot</div>
+                                                <div class="valueoutput">25000x</div>
+                                                <div class="button1"><div class="text">Identifier kopieren</div></div>
+                                        </div>
+
+                                        <div class="genbox">
+                                                <div class="toptext">Item | Eingelöst von: dnz | Identifier: steam:12313213131231</div>
+                                                <div class="hr"></div>
+                                                <div class="code">Code:</div>
+                                                <div class="itemtype">Item/Type:</div>
+                                                <div class="value">Anzahl/Value:</div>
+                                                <div class="codeoutput">XXXXXXXXXXXXXXXX</div>
+                                                <div class="itemtypeoutput">Brot</div>
+                                                <div class="valueoutput">25000x</div>
+                                                <div class="button1"><div class="text">Identifier kopieren</div></div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+               
+        </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+    "menu:doors": "<i class=\"bi bi-door-open-fill\"></i> Puertas",
+    "menu:buildings": "<i class=\"bi bi-building\"></i> Edificios",
+    "menu:settings": "<i class=\"bi bi-gear-fill\"></i> Ajustes",
+
+    "menu:door": "Puerta",
+    "menu:new_door": "Puerta Nueva",
+    "menu:ID": "ID",
+    "menu:label": "Etiqueta",
+    "menu:doors_count": "Las Puertas Cuentan",
+    "menu:default": "Defecto",
+    "menu:maximum_distance": "Distancia Máxima",
+    "menu:distance": "Distancia",
+    "menu:model": "Modelo",
+    "menu:choose_doors": "Elige Puertas",
+
+    "menu:delete": "Borrar",
+    "menu:close": "Cerca De",
+    "menu:create": "Crear",
+    "menu:save": "ahorrar",
+
+    "menu:used_doors": "Puertas Usadas",
+    "menu:default_doors_state": "Estado De Las Puertas Por Defecto",
+    "menu:unlocked": "Desbloqueado",
+    "menu:locked": "Bloqueado",
+    "menu:icon_coordinates": "Coordenadas Del Icono",
+    "menu:choose": "Escoger",
+    "menu:choose_icon_coords": "Elija Las Coordenadas Del Icono",
+
+    "menu:requires_a_job": "Requiere Un Trabajo",
+    "menu:allowed_jobs": "Trabajos Permitidos",
+    "menu:choose_jobs": "Elige Trabajos",
+    "menu:requires_an_item": "Requiere Un Artículo",
+    "menu:required_item": "Elemento Requerido",
+    "menu:choose_item": "Elegir Artículo",
+    "menu:requires_job_and_item": "Requiere Trabajo y artículo",
+
+    "menu:requires_a_code": "Requiere Un Código",
+    "menu:code": "Código",
+
+    "menu:auto_closure": "Cierre Automático",
+    "menu:seconds_before_auto_closure": "Segundos antes del cierre automático",
+
+    "menu:doorlock_animation": "Animación de cerradura de puerta",
+
+    "menu:new_building": "Nuevo edificio",
+    "menu:building": "Edificio",
+    "menu:none": "Ninguna",
+    "menu:use_building_rules": "Usar reglas de edificio",
+    "menu:choose_building": "Elige edificio",
+
+    "menu:jobs_dialog:title": "Lista de trabajo",
+    "menu:jobs_dialog:search_job": "Buscar trabajo",
+
+    "menu:items_dialog:title": "Lista de articulos",
+    "menu:items_dialog:search_item": "buscar elementos",
+
+    "menu:building_dialog:title": "Lista de edificios",
+    "menu:building_dialog:search_building": "Buscar edificio",
+
+    "menu:settings:language": "el Idioma",
+    "menu:save_doors_status_after_restart": "Guardar el estado de las puertas después de reiniciar",
+    "menu:enable_doorlock_animation": "Habilitar animación de cerradura de puerta",
+    "menu:animation_dictionary": "diccionario de animación",
+    "menu:animation_name": "Nombre de la animación",
+    "menu:animation_duration": "Duración de la animación",
+    "menu:settings:doorlock_icon": "Icono de cerradura de puerta",
+    "menu:settings:icon_size": "tamaño de ícono",
+    "menu:item_to_lockpick_doors": "Artículo para abrir puertas",
+    "menu:lockpick_name": "nombre de ganzúa",
+    "menu:minimum_quantity": "cantidad mínima",
+    "menu:lose_on_use": "perder en el uso",
+
+    "menu:apply_changes": "aplicar cambios",
+
+    "menu:not_allowed:you_are_not_allowed": "No tienes permiso para usar este menú.",
+    "menu:not_allowed:if_you_are_admin": "Si es un administrador del servidor, debe copiar y pegar el siguiente código en su server.cfg"
+}

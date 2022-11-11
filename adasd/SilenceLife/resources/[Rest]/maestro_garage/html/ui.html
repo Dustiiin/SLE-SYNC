@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="ui.js"></script>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>by  kermo.designs</title>
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+	font-family: Poppins;
+
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+        transform: translate(-50%);
+        left: 50%;
+		position: fixed;
+		width: 1920px;
+		height: 1080px;
+                top: 150px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+
+	}
+	.Canvas2 {
+			-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		display: none;
+		position: absolute;
+		width: 1487px;
+height: 762px;
+border-radius: 26px;
+background: linear-gradient(#000 0%, #272727 100%);
+border: 1px solid #fff;
+		left: 306px;
+		top: 100px;
+		overflow: visible;
+	}
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+	#bg {
+        border-radius: 57px;
+        border:#ffffff 1px solid; ;
+		position: absolute;
+		width: 1200px;
+		height: 530px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#logo {
+		position: absolute;
+		width: 74px;
+		height: 74px;
+		left: 25px;
+		top: 15px;
+		overflow: visible;
+	}
+
+	#close {
+		position: absolute;
+		width: 26px;
+		height: 26px;
+		left: 700px;
+		top: 15px;
+		overflow: visible;
+		transition:0.5s;
+}
+
+
+
+	#Verlaufhintergrundmaestro {
+		left: 46px;
+		top: 10px;
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		line-height: 20.000003814697266px;
+		margin-top: -1.6666669845581055px;
+		text-align: center;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 16.666669845581055px;
+		color: #9c9c9c;
+	}
+
+	#Verlaufhintergrundmaestro {
+		position: absolute;
+		width: 180px;
+		height: 25px;
+		left: 364px;
+		top: 86px;
+		overflow: visible;
+	}
+	#Verlaufhintergrundmaestrov2v3 {
+		position: absolute;
+		width: 180px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Verlaufhintergrundmaestro {
+		position: absolute;
+		width: 180px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Verlaufhintergrundmaestro_15 {
+		position: absolute;
+		left: 20px;
+		top: 0px;
+		overflow: visible;
+
+
+
+
+	}
+	#Verlaufhintergrundmaestro_15_s {
+		fill: rgba(0, 0, 0, 0);
+
+	}
+	.Verlaufhintergrundmaestro_15_s {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+
+	#EINPARKEN {
+		width: 233px;
+height: 41px;
+border-radius: 10px;
+background: #000;
+border: 1px solid #fff;
+		left: 450px;
+		top: 96px;
+		position: absolute;
+		overflow: visible;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(255,255,255,1);
+	}
+	#EINPARKEN:hover {
+		color: #ffffff;
+	}
+	#AUSPARKEN {
+		width: 233px;
+height: 41px;
+border-radius: 10px;
+background: #000;
+border: 1px solid #fff;
+		left: 740px;
+		top: 94px;
+		position: absolute;
+		overflow: visible;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(255,255,255,1);
+	}
+	#AUSPARKEN:hover {
+		color: #ffffff;
+	}
+	.one-bar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10.417vw;
+    height: 2.604vw;  
+    position: relative;
+    top: 1.563vw;
+    border-radius: 2.604vw;
+	left: 1.667vw;
+
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.604vw;
+    font-size: 1.302vw;
+    border-radius: 0.208vw;
+    padding-bottom: 0.313vw;
+    border: none;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.head-buttons {
+    position: relative;
+    width: 20.833vw;
+    height: 2.604vw;  
+    text-align: center;
+    font-size: 1.042vw;
+    top: 7.813vw;
+}
+
+
+
+.maestro_garagehintergrundinfo {
+    display: block;
+    position: relative;
+    width: 1400px;
+    height: 480px;
+    bottom: -140px;
+    left: 70px;
+    overflow: auto;
+}
+
+.maestro_garagehintergrundinfo list {
+    padding: 0; 
+    margin: 0;
+    list-style-type: none; 
+}
+
+.maestro_garagehintergrundinfo vehicle-list {
+    width: 7.813vw;
+    height: 5.208vw;
+
+    float: left;
+}
+
+.vehicle {
+    padding: 0; 
+    margin: 0;
+    list-style-type: none;
+    width: 400px;
+    height: 140px;
+	float: left;
+	padding-bottom: 0.625vw;
+}
+
+.vehicle-inner {
+	background-color: rgba(0, 0, 0, 0.47);
+    position: relative;
+    width: 359px;
+	top: 50px;
+	left: 50px;
+    height: 110px;
+    border-radius: 13px;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+	transition:0.5s;
+	transition:1s;
+  transform-origin:center;
+  transform:perspective(1600px) rotateX(10deg);
+  -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+}
+.vehicle-inner:hover {
+		filter: drop-shadow(7px 8px 26px rgba(255, 255, 255, 0.658));
+		-webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+  
+  transform-origin:center;
+  transform:perspective(300px) rotateX(10deg);
+  transition:1s;
+  object-fit:cover;
+
+}
+.maestro_garagehintergrundinfo::-webkit-scrollbar {
+    width: 0.521vw;
+    height: 0.781vw;
+}
+
+.maestro_garagehintergrundinfo::-webkit-scrollbar-track {
+    border-radius: 0.521vw;
+    background-color: rgb(255, 255, 255);
+	border: 1px #707070 solid;
+}
+
+.maestro_garagehintergrundinfo::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+	border: 1px #707070 solid;
+	height: 50px;
+    border-radius: 1.042vw;
+}
+
+
+.inner-label-knz {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 89%;
+    text-align: center;
+    color: white;
+    font-weight: 750;
+	font-size: 12px;
+    letter-spacing: 0.052vw;
+}
+.inner-label-knz2 {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 89%;
+    text-align: center;
+	color: #ffffff;
+    font-weight: 750;
+	font-size: 13px;
+}
+
+
+
+
+
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+<div id="Canvas">
+	<div class="Canvas2 noselect">
+
+		<div class="content">
+                <div id="vehicle-list" class="maestro_garagehintergrundinfo">
+                 
+                </div>
+        </div>
+			
+		<div id="logo">
+			<img id="logo" src="https://media.discordapp.net/attachments/915943394117824543/915943555204259880/Logo.png">
+		</div>
+
+
+	   <div id="close">
+			<img id="close" src="exit.png">
+
+		</div>
+
+		<div id="Verlaufhintergrundmaestro">
+			<div id="Verlaufhintergrundmaestrov2v3">
+				<div id="Verlaufhintergrundmaestro">
+					<div id="Verlaufhintergrundmaestro_15">
+						<svg class="Verlaufhintergrundmaestro_15_s">
+							<rect id="Verlaufhintergrundmaestro_15_s" rx="5" ry="5" x="0" y="0" width="180" height="25">
+							</rect>
+						</svg>
+							
+						</svg>
+					</div>
+				</div>
+				<button id="EINPARKEN"  id="Verlaufhintergrundmaestro-2" class="head-switch-out">
+				<span>EINPARKEN</span> </button>
+			</div>
+				</div>
+				<button id="AUSPARKEN" id="Verlaufhintergrundmaestro-1" class="head-switch-in selected"> 
+					<span>AUSPARKEN</span> </button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</body>
+</html>

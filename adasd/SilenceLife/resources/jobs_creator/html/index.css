@@ -1,0 +1,34 @@
+.bi { vertical-align: 0.125em; }
+
+.clickable {
+    cursor: pointer;
+}
+
+#job-creator-version {
+    line-height: 10vh;
+
+    width: max-content;
+
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#not-allowed-container {
+    background-color: #222;
+
+    color: white;
+
+    width: 50%;
+
+    top: 30%;
+    left: 25%;
+
+    position: absolute;
+
+    display: none;
+}
+
+.main-text-color {
+    color: blue
+}

@@ -1,0 +1,124 @@
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+  /*display: none;
+  background:rgb(128, 0, 90);*/
+  background:transparent;
+}
+
+.radio-image {
+  max-width: 325px!important;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  pointer-events:none;
+}
+
+#cursor {
+  position: absolute;
+  z-index: 999999;
+  display: none;
+}
+
+b {
+  color:#fff;
+}
+
+.radio-container {
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 15.0vw!important;
+  height: 49.2vh;
+  position: fixed;
+  right: 19vw;
+  bottom: -49.5vh;
+  padding-bottom:3vh;
+  background-color:#f3f3f3;
+  opacity: 0.5;
+}
+
+
+.radio-container > .statusbar {
+  border-radius: 10px 10px 0 0;
+  position:relative;
+  background-color:#3f51b5;
+  text-align: center;
+  height:3vh;
+  line-height: 3vh;
+}
+
+.radio-container > .connected {
+  background-color: #4db53f !important;
+  animation: glowing 3s infinite;
+}
+
+.radio-container > .statusbar > span.title {
+  color: #eceff1 !important;
+  font-weight: bolder;
+}
+.radio-container > .statusbar > form#onoff > button {
+  position: absolute;
+  top:0.5vh;
+  right:0;
+  color:#fff;
+  border: none;
+  background: none;
+}
+
+.radio-container > .content {
+  display: inline-block;
+  padding: 1.5rem;
+  align-content: center;
+  margin: auto;
+}
+
+.table-holder {
+  text-align: left;
+  margin:auto;
+  width:100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+  overflow-y:auto;
+  height: 180px;
+}
+
+th {
+  min-width: 75px;
+}
+
+
+@keyframes moveOut {
+  from {
+    opacity: 1;
+    bottom: 10vh;
+    /*left: 45vw;*/
+  }
+  to {
+    opacity: 0.5;
+    bottom: -49.5vh;
+    /*left: 1.5vw;*/
+  }
+}
+
+@keyframes moveIn {
+  from {
+    opacity: 0.5;
+    bottom: -49.5vh;
+    /*left: 1.5vw;*/
+  }
+  to {
+    opacity: 1;
+    bottom: 10vh;
+    /*left: 45vw;*/
+  }
+}
+
+@keyframes glowing {
+  0% { background-color: #2ba805; box-shadow: 0 0 3px #2ba805; }
+  50% { background-color: #49e819; box-shadow: 0 0 10px #49e819; }
+  100% { background-color: #2ba805; box-shadow: 0 0 3px #2ba805; }
+  }

@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\bin\Debug\netstandard2.0\SaltyServer.net.deps.json
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\bin\Debug\netstandard2.0\SaltyServer.net.dll
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\bin\Debug\netstandard2.0\SaltyServer.net.pdb
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\obj\Debug\netstandard2.0\SaltyServer.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\obj\Debug\netstandard2.0\SaltyServer.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\obj\Debug\netstandard2.0\SaltyServer.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\obj\Debug\netstandard2.0\SaltyServer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\obj\Debug\netstandard2.0\SaltyServer.csproj.CopyComplete
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\obj\Debug\netstandard2.0\SaltyServer.net.dll
+C:\Users\Administrator\Desktop\starryskyv-fivem\txData\StarrySkyV\resources\[Voice]\saltychat\SaltyServer\obj\Debug\netstandard2.0\SaltyServer.net.pdb

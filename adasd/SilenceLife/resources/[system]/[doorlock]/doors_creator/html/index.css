@@ -1,0 +1,22 @@
+#not-allowed-container {
+    background-color: #222;
+
+    color: white;
+
+    width: 50%;
+
+    top: 30%;
+    left: 25%;
+
+    position: absolute;
+
+    display: none;
+}
+
+#doors-creator-label {
+    color: #fd7e14;
+}
+
+.clickable {
+    cursor: pointer;
+}
